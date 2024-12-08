@@ -46,6 +46,11 @@ function App() {
     console.log(`addHandelr`);
   };
 
+  const resetpasswordHandler = async () => {
+    // const response = await.api(/admin/accounts/{adminId}/reset-password);
+    console.log(`초기화할 아이디: ${selectedUserIds} (API 요청)`);
+  };
+
   return (
     <div className="App">
       <Container>
@@ -55,6 +60,9 @@ function App() {
           </TheButton>
           <TheButton $danger onClick={deleteHandelr}>
             삭제
+          </TheButton>
+          <TheButton $dark onClick={resetpasswordHandler}>
+            비밀번호 초기화
           </TheButton>
         </ButtonContainer>
         <UserList

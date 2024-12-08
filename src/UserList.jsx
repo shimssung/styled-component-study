@@ -1,8 +1,18 @@
-// UserList.js
 import React, { useEffect, useState } from "react";
 import { ChevronRight, ChevronLeft } from "lucide-react";
 import TheTable from "./components/element/TheTable";
 import styled from "styled-components";
+
+// 예시
+{
+  /* <UserList
+title="관리자 목록"
+thead={["", "이름", "아이디", "가입날짜"]}
+data={adminInfo}
+itemsPerPage={11}
+columns={["nickName", "empName", "updatedAt"]}
+/> */
+}
 
 function UserList({
   title,
