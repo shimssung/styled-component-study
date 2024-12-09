@@ -4,6 +4,7 @@ import UserList from "./UserList";
 import { v4 as uuidv4 } from "uuid";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import UserListPage2 from "./UserListPage2";
 
 function App() {
   const [adminInfo, setAdminInfo] = useState([]);
@@ -53,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-      <Container>
+      {/* <Container>
         <ButtonContainer>
           <TheButton $primary onClick={addHandelr}>
             추가
@@ -73,6 +74,9 @@ function App() {
           columns={["nickName", "empName", "updatedAt"]}
           onSelectionChange={handleSelectionChange} // 부모 컴포넌트로 선택된 아이디 전달
         />
+      </Container> */}
+      <Container>
+        <UserListPage2></UserListPage2>
       </Container>
     </div>
   );
